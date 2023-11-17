@@ -7,19 +7,21 @@
       </div>
       <div class=" mr-5">
         <v-btn-toggle v-model="selectedSignal" :style="{'background':bgColor}">
-          <v-btn class="px-10" :style="{'background':bgColor}">
+          <v-btn class="px-10" :style="{'background':bgColor}"
+            to="activity" @click="changedBG_Color">
             <img src="../../assets/headerImg/btn1.png" alt="" />
             <span class="title">最新活動</span>
           </v-btn>
-          <v-btn class="px-10" :style="{'background':bgColor}">
+          <v-btn class="px-10" :style="{'background':bgColor}" @click="changedBG_Color"
+          to="policy">
             <img src="../../assets/headerImg/btn2.png" alt="" />
             <span class="title">政策議題</span>
           </v-btn>
-          <v-btn class="px-10" :style="{'background':bgColor}">
+          <v-btn class="px-10" :style="{'background':bgColor}" @click="changedBG_Color">
             <img src="../../assets/headerImg/btn3.png" alt="" />
             <span class="title">小額捐贈</span>
           </v-btn>
-          <v-btn class="px-10" :style="{'background':bgColor}">
+          <v-btn class="px-10" :style="{'background':bgColor}" @click="changedBG_Color">
             <img src="../../assets/headerImg/btn4.png" alt="" />
             <span class="title">服務信箱</span>
           </v-btn>
@@ -34,9 +36,12 @@
 <script setup>
   import { ref } from 'vue';
   const bgColor= ref('#72cef5');
-  
+  const emits = defineEmits(['headerChangeBgColor']);
   const selectedSignal = ref('');
-
+  const changedBG_Color = ()=>{
+    bgColor.value =bgColor.value === '#72cef5'?'#Aeadab': '#72cef5';
+    emits('headerChangeBgColor', bgColor.value);
+  }
 </script>
 <style lang="scss">
   .headerStyle{

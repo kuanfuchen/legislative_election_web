@@ -15,7 +15,25 @@ const routes = [
         component: () => import('@/views/Home.vue'),
       },
     ],
-  },
+  },{
+    path:'/activity',
+    component:()=>import('@/layouts/default/Activity.vue'),
+    children:[
+      {
+        path:'',
+        name:'Active',
+        component: () => import('@/views/NewActivity.vue'),
+      }
+    ]
+  },{
+    path:'/policy',
+    component:()=> import('@/layouts/default/Policy_issues.vue'),
+    children:[{
+      path:'',
+      component:()=>import('@/views/Policity.vue')
+    }]
+  }
+
 ]
 
 const router = createRouter({

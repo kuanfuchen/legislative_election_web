@@ -41,7 +41,7 @@
               </div>
             </div>
           </div>
-          <div class="">
+          <div class="animation imgAnimation">
             <img src="../assets/contentImg/2.png" alt="">
           </div>
         </div>
@@ -64,11 +64,31 @@
     line-height: 1.5;
   }
   .titleStyle{
-   
     width:60%;
     .childStyle{
       background: #E3F5FD;
       border-radius: 10px;
+    }
+  }
+  .imgAnimation{
+    transform: translateX(-45%);
+  }
+  .animation {
+    animation-name: move-object;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+  }
+  @keyframes move-object {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-45%);
     }
   }
 </style>
