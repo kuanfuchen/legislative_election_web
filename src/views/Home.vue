@@ -71,7 +71,7 @@
     }
   }
   .imgAnimation{
-    transform: translateX(-45%);
+    transform: translateX(-30%);
   }
   .animation {
     animation-name: move-object;
@@ -88,7 +88,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-45%);
+      transform: translateX(-30%);
     }
   }
 </style>

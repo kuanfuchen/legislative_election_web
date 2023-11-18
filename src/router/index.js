@@ -32,9 +32,24 @@ const routes = [
       path:'',
       component:()=>import('@/views/Policity.vue')
     }]
+  },{
+    path:'/amountGift',
+    component: ()=> import('@/layouts/default/HomeGift.vue'),
+    children:[{
+      path:'',
+      name:'HomeGift',
+      component:()=>import('@/views/SAHomeGift.vue')
+    }]
+  },{
+    path:'/serviceEmail',
+    component:()=>import('@/layouts/default/ForEmail.vue'),
+    children:[{
+      path:'',
+      name:'ServiceEmail',
+      component:() => import('@/views/ServiceMail.vue')
+    }]
   }
-
-]
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),

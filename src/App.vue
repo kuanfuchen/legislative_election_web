@@ -17,7 +17,7 @@ import AppBar from './layouts/default/AppBar.vue';
 <style>
   .global{
     height: 100vh;
-    overflow-y:hidden;
+    overflow:hidden;
     display: flex;
     /* align-items: center; */
   }
