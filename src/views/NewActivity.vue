@@ -9,7 +9,6 @@
           <div class="mx-2 d-flex align-center">
             <img class="" src="../assets/contentImg/photo2.png" alt="">
           </div>
-          
           <div class="ml-3">
             <v-btn class="">2023.12.26</v-btn>
             <p class="titleStyle">參與台北寵物論壇，爭取貓咪友善環境</p>

@@ -16,9 +16,6 @@ export default defineConfig({
     // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#readme
     vuetify({
       autoImport: true,
-      styles: {
-        configFile: 'src/styles/settings.scss',
-      },
     }),
     ViteFonts({
       google: {
@@ -47,5 +44,4 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-  base:'/legislative_election_web/'
 })
