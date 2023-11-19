@@ -1,1 +1,0 @@
-import{n as e,J as t,k as c}from"./index-fae3bd2c.js";import r from"./NewActivity-09ed9f10.js";const s={class:"d-flex justify-center align-center h-100"},m={__name:"Activity",setup(a){return(n,o)=>(e(),t("div",s,[c(r)]))}};export{m as default};

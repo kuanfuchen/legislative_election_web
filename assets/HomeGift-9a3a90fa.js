@@ -1,1 +1,0 @@
-import e from"./SAHomeGift-e8bcaaf3.js";import{n as t,J as o,k as r}from"./index-fae3bd2c.js";import"./VRow-8177b545.js";import"./VTextField-ccdbaf14.js";import"./transition-cb5b29fe.js";const c={class:"d-flex justify-center align-center h-100"},l={__name:"HomeGift",setup(s){return(a,n)=>(t(),o("div",c,[r(e)]))}};export{l as default};
