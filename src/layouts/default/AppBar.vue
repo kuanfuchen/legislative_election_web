@@ -22,7 +22,7 @@
             <img src="../../assets/headerImg/btn3.png" alt="" />
             <span class="title">小額捐贈</span>
           </v-btn>
-          <v-btn class="px-10" :style="{'background':bgColor}" to="serviceEmail"
+          <v-btn class="px-10" :style="{'background':bgColor}" to="serviceemail"
             @click="changedBG_Color('#72cef5')">
             <img src="../../assets/headerImg/btn4.png" alt="" />
             <span class="title">服務信箱</span>

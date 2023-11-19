@@ -1,5 +1,5 @@
 // Composables
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, /*createWebHistory*/ createWebHashHistory } from 'vue-router'
 
 const routes = [
   {
@@ -41,7 +41,7 @@ const routes = [
       component:()=>import('@/views/SAHomeGift.vue')
     }]
   },{
-    path:'/serviceEmail',
+    path:'/serviceemail',
     component:()=>import('@/layouts/default/ForEmail.vue'),
     children:[{
       path:'',
@@ -52,7 +52,9 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  // createWebHashHistory
+  history: createWebHashHistory(process.env.BASE_URL),
+  // history: createWebHistory(process.env.BASE_URL),
   routes,
 })
 
