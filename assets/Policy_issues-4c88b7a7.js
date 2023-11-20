@@ -1,1 +1,0 @@
-import e from"./Policity-4714bef8.js";import{n as t,J as o,k as r}from"./index-82afb36c.js";import"./plugin-vueexport-helper-c27b6911.js";import"./VRow-393c4f7c.js";const s={class:"d-flex justify-center align-center h-100"},p={__name:"Policy_issues",setup(c){return(i,a)=>(t(),o("div",s,[r(e)]))}};export{p as default};
