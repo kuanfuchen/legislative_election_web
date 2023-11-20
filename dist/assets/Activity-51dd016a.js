@@ -1,0 +1,1 @@
+import{l as e,F as t,j as r}from"./index-7fe5df2c.js";import c from"./NewActivity-f4157468.js";import"./VBtn-60c507d0.js";import"./resizeObserver-c91e45ad.js";const o={class:"d-flex justify-center align-center h-100"},l={__name:"Activity",setup(s){return(a,i)=>(e(),t("div",o,[r(c)]))}};export{l as default};
