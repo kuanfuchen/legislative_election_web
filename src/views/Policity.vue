@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex align-items-center activityGlobalStyle"  >
+  <div class="d-flex align-items-center activityGlobalStyle1"  >
     <v-container >
       <div class="text-h2 font-weight-black mb-10 text-center">政策議題</div>
       <v-row no-gutters>
@@ -12,16 +12,16 @@
           <div class="d-flex titleBG  px-3 pb-3 mx-5">
             <div class="mt-3">
               <div  style="height:33%">
-                <div class="font-weight-bold">設立寵物醫療基金</div>
-                <p>每年撥款新台幣 10 億元，專款專用於支援家庭寵物的醫療費用</p>
+                <div class="font-weight-bold pColor">設立寵物醫療基金</div>
+                <p style="color: black !important;">每年撥款新台幣 10 億元，專款專用於支援家庭寵物的醫療費用</p>
               </div>
               <div style="height:33%">
-                <div class="font-weight-bold">提供醫療補助</div>
-                <p>每隻寵物每年可獲得高達新台幣 20,000 元的醫療補助，減輕飼主的經濟壓力</p>
+                <div class="font-weight-bold pColor">提供醫療補助</div>
+                <p class="pColor">每隻寵物每年可獲得高達新台幣 20,000 元的醫療補助，減輕飼主的經濟壓力</p>
               </div>
               <div style="height:33%">
-                <div class="font-weight-bold">合作動物醫院</div>
-                <p>目前已有和超過 200 家動物醫院進行初步的合作討論</p>
+                <div class="font-weight-bold pColor">合作動物醫院</div>
+                <p class="pColor">目前已有和超過 200 家動物醫院進行初步的合作討論</p>
               </div>
               
               
@@ -86,11 +86,14 @@
 </template>
 <script setup></script>
 <style>
-  .activityGlobalStyle{
+  .activityGlobalStyle1{
     width: 70vw;
   }
   .titleText{
     font-size: 24px;
+  }
+  .pColor{
+    color: black !important;
   }
   .titleBG{
     background: #E3F5FD;

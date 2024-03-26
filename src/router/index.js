@@ -1,9 +1,9 @@
 // Composables
-import { createRouter, /*createWebHistory*/ createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory /*createWebHashHistory */} from 'vue-router'
 
 const routes = [
   {
-    path: '/',
+    path: '/legislative_election_web',
     component: () => import('@/layouts/default/Default.vue'),
     children: [
       {
@@ -16,7 +16,7 @@ const routes = [
       },
     ],
   },{
-    path:'/activity',
+    path:'/legislative_election_web/activity',
     component:()=>import('@/layouts/default/Activity.vue'),
     children:[
       {
@@ -26,22 +26,23 @@ const routes = [
       }
     ]
   },{
-    path:'/policy',
+    path:'/legislative_election_web/policy',
     component:()=> import('@/layouts/default/Policy_issues.vue'),
     children:[{
       path:'',
+      name:'Policy',
       component:()=>import('@/views/Policity.vue')
     }]
   },{
-    path:'/amountGift',
+    path:'/legislative_election_web/amountgift',
     component: ()=> import('@/layouts/default/HomeGift.vue'),
     children:[{
       path:'',
-      name:'HomeGift',
+      name:'AmountGift',
       component:()=>import('@/views/SAHomeGift.vue')
     }]
   },{
-    path:'/serviceemail',
+    path:'/legislative_election_web/serviceemail',
     component:()=>import('@/layouts/default/ForEmail.vue'),
     children:[{
       path:'',
@@ -53,8 +54,8 @@ const routes = [
 
 const router = createRouter({
   // createWebHashHistory
-  history: createWebHashHistory(process.env.BASE_URL),
-  // history: createWebHistory(process.env.BASE_URL),
+  // history: createWebHashHistory(process.env.BASE_URL),
+  history: createWebHistory(process.env.BASE_URL),
   routes,
 })
 

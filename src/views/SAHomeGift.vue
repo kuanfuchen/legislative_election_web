@@ -34,7 +34,7 @@
           </v-col>
           <v-col cols="6" class="pl-10"> 
             <div class="d-flex justify-center">
-              <img :src="donatedPlot" alt="">
+              <img :src="donatedPlot(0)" alt="">
             </div>
             
             <div class="d-flex justify-center mt-5">
@@ -59,14 +59,24 @@
   const selectedBtn = ref('');
   const muchMoney = ref(0);
   const imgPlotArr = ['../assets/contentImg/sponsor4.png','../assets/contentImg/sponsor3.png','../assets/contentImg/sponsor2.png', '../assets/contentImg/sponsor1.png'];
-  const donatedPlot = ref('')
+  const display_plot = ref(1);
+  // const donatedPlot = ref('')
   const calMoney = (num, index)=>{
-    donatedPlot.value = new URL(imgPlotArr[index], import.meta.url).href;
+    display_plot.value = imgPlotArr[index];
+    // donatedPlot.value = new URL(imgPlotArr[index], import.meta.url).href;
     selectedBtn.value = index;
     console.log(num)
   }
+  const donatedPlot = (num = 0)=>{
+    console.log(num, 'num')
+    console.log(imgPlotArr[num])
+
+    return new URL(imgPlotArr[num], import.meta.url).href;
+    // return new URL(imgPlotArr[num], import.meta.url).href;
+  }
   onMounted(()=>{
-    donatedPlot.value = new URL(imgPlotArr[0], import.meta.url).href;
+    display_plot.value = imgPlotArr[0];
+    // donatedPlot(imgPlotArr.value[0]);
     // const imageUrl = new URL('./logo.png', import.meta.url).href
   })
 </script>
