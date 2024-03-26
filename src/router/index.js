@@ -1,5 +1,5 @@
 // Composables
-import { createRouter, createWebHistory /*createWebHashHistory */} from 'vue-router'
+import { createRouter, /*createWebHistory*/ createWebHashHistory } from 'vue-router'
 
 const routes = [
   {
@@ -54,13 +54,8 @@ const routes = [
 
 const router = createRouter({
   // createWebHashHistory
-<<<<<<< HEAD
-  // history: createWebHashHistory(process.env.BASE_URL),
-  history: createWebHistory(process.env.BASE_URL),
-=======
   history: createWebHashHistory(import.meta.env.BASE_URL),
   // history: createWebHistory(process.env.BASE_URL),
->>>>>>> 34756256512ef2aa2a0ac3a5196f4dbf682eedcf
   routes,
 })
 

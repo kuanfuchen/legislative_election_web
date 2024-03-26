@@ -11,7 +11,8 @@ import { fileURLToPath, URL } from 'node:url'
 const INVALID_CHAR_REGEX = /[\u0000-\u001F"#$&*+,:;<=>?[\]^`{|}\u007F]/g;
 const DRIVE_LETTER_REGEX = /^[a-z]:/i;
 export default defineConfig({
-  base:'/legislative_election_web/',
+  // base:'/legislative_election_web/',
+  base:'./',
   plugins: [
     vue({
       template: { transformAssetUrls }
