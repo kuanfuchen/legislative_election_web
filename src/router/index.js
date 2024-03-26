@@ -3,7 +3,7 @@ import { createRouter, /*createWebHistory*/ createWebHashHistory } from 'vue-rou
 
 const routes = [
   {
-    path: '/legislative_election_web',
+    path: '/',
     component: () => import('@/layouts/default/Default.vue'),
     children: [
       {
@@ -16,7 +16,7 @@ const routes = [
       },
     ],
   },{
-    path:'/legislative_election_web/activity',
+    path:'/activity',
     component:()=>import('@/layouts/default/Activity.vue'),
     children:[
       {
@@ -26,7 +26,7 @@ const routes = [
       }
     ]
   },{
-    path:'/legislative_election_web/policy',
+    path:'/policy',
     component:()=> import('@/layouts/default/Policy_issues.vue'),
     children:[{
       path:'',
@@ -34,7 +34,7 @@ const routes = [
       component:()=>import('@/views/Policity.vue')
     }]
   },{
-    path:'/legislative_election_web/amountgift',
+    path:'/amountgift',
     component: ()=> import('@/layouts/default/HomeGift.vue'),
     children:[{
       path:'',
@@ -42,7 +42,7 @@ const routes = [
       component:()=>import('@/views/SAHomeGift.vue')
     }]
   },{
-    path:'/legislative_election_web/serviceemail',
+    path:'/serviceemail',
     component:()=>import('@/layouts/default/ForEmail.vue'),
     children:[{
       path:'',

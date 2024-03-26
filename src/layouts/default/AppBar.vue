@@ -1,6 +1,6 @@
 <template>
     <div class="headerStyle mt-5 d-flex justify-space-around">
-      <router-link class="d-flex headerStyle ml-5" @click="changedBG_Color('#72cef5')" to="/legislative_election_web/">
+      <router-link class="d-flex headerStyle ml-5" @click="changedBG_Color('#72cef5')" to="/">
         <img src="../../assets/headerImg/1.png" />
         <img src="../../assets/headerImg/2.png" />
         <img src="../../assets/headerImg/3.png" />
