@@ -20,6 +20,5 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/kuanfuchen/legislative_election_web main:gh-page
->>>>>>> 34756256512ef2aa2a0ac3a5196f4dbf682eedcf
+git push -f https://github.com/kuanfuchen/legislative_election_web master:gh-page
 cd -
